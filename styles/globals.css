@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --white: rgb(245, 245, 245);
+  --black: rgb(0, 0, 0);
+  --transparent: transparent;
+  --blue-300: rgb(147, 197, 253);
+  --blue-400: rgb(96, 165, 250);
+  --blue-500: rgb(59, 130, 246);
+  --indigo-300: rgb(165, 180, 252);
+  --violet-200: rgb(221, 214, 254);
+}
+
+/* Optional: Add this to see the animation better */
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+.animate-aurora {
+  animation: aurora 60s linear infinite;
+}
